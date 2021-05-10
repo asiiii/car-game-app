@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">GEAR UP!</string>
+    <string name="welcome_label_text">Welcome to GEAR UP!</string>
+    <string name="option_label_text">Pick a game</string>
+    <string name="identify_the_car_make_label">Identify the car make</string>
+    <string name="hints_label">HINTS</string>
+    <string name="identify_the_car_image_label">Identify the car image</string>
+    <string name="advanced_level_label">Advanced Level</string>
+    <string name="identify_button_label">Identify</string>
+    <string name="identify_the_car_make_text">What is this car make?</string>
+    <string name="next_button_label">Next</string>
+    <string name="activity2_name">Identify Car Make</string>
+    <string name="activity3_name">Hints</string>
+    <string name="correct_answer">CORRECT</string>
+    <string name="wrong_answer">WRONG</string>
+    <string name="positive_message">Good job!</string>
+    <string name="encouraging_message">Better luck next time!</string>
+    <string name="guess_hint">Enter guess here</string>
+    <string name="submit_button_label">Submit</string>
+    <string name="guess_the_car_make_text">Guess the Car Make!</string>
+    <string name="activity4_name">Identify the Car Image</string>
+    <string name="identify_image_question_text">Which car is a %1$s?</string>
+    <string name="advanced_level_instructions_text">Identify the car make! You get <i>3</i> chances to get the right answer</string>
+    <string name="advanced_level_hint_text">Enter guess here</string>
+    <string name="score_text_innit">Score: 0</string>
+    <string name="score_text">Score: %1$s</string>
+    <string name="timer_on_text">Timer On</string>
+    <string name="timer_off_text">Timer Off</string>
+    <string name="display_timer">Time Left: %1$s</string>
+    <string name="tries_left_text">Tries left: %1$s</string>
+    <string name="activity5_name">Advanced Level</string>
+    <string name="error_count">Error Count: %1$s</string>
+    <string name="hints_no_guess_text">Enter your guess!</string>
+    <string name="hints_repeatitive_guess_text">You already entered that letter!</string>
+    <string name="random_car_make">Random Car Make</string>
+    <string name="high_score_label">High Score</string>
+
+    <string-array name="carmakes_array">
+        <item>Audi</item>
+        <item>Bentley</item>
+        <item>BMW</item>
+        <item>Bugatti</item>
+        <item>Dodge</item>
+        <item>Ferrari</item>
+        <item>Ford</item>
+        <item>Honda</item>
+        <item>Jaguar</item>
+        <item>Lamborghini</item>
+        <item>Lexus</item>
+        <item>Maserati</item>
+        <item>Mercedes</item>
+        <item>Mitsubishi</item>
+        <item>Nissan</item>
+        <item>Porsche</item>
+        <item>Suzuki</item>
+        <item>Tesla</item>
+        <item>Toyota</item>
+        <item>Volkswagen</item>
+    </string-array>
+</resources>

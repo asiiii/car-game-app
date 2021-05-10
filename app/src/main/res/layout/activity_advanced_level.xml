@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/AdvancedLevelLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_second"
+    tools:context=".FifthActivity">
+
+    <TextView
+        android:id="@+id/textView_timer4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginRight="180dp"
+        android:layout_toStartOf="@+id/display_score"
+        android:layout_toLeftOf="@+id/display_score"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="#EAE6E6"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/display_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/score_text_innit"
+        android:textColor="#EAE6E6"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView_advanced_level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/display_score"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:fontFamily="@font/alegreya_sans_sc"
+        android:gravity="center"
+        android:text="@string/advanced_level_instructions_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#EAE6E6"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:id="@+id/imageTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_advanced_level"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/advanced_level_image1"
+                android:layout_width="200dp"
+                android:layout_height="135dp"
+                android:contentDescription="@string/random_car_make"
+                android:cropToPadding="true"
+                app:srcCompat="@drawable/audi1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editText_entry1"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="40dp"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:hint="@string/advanced_level_hint_text"
+                    android:importantForAccessibility="no"
+                    android:inputType="textShortMessage|text"
+                    android:textColor="#EAE6E6"
+                    android:textColorHint="#EAE6E6"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/advanced_level_correction1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center"
+                    android:textColor="#FCDF03"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/advanced_level_image2"
+                android:layout_width="200dp"
+                android:layout_height="135dp"
+                android:contentDescription="@string/random_car_make"
+                app:srcCompat="@drawable/bentley1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editText_entry2"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="40dp"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:hint="@string/advanced_level_hint_text"
+                    android:importantForAccessibility="no"
+                    android:inputType="textShortMessage|text"
+                    android:textColor="#EAE6E6"
+                    android:textColorHint="#EAE6E6"
+                    android:textSize="18sp"
+                    android:importantForAutofill="no" />
+
+                <TextView
+                    android:id="@+id/advanced_level_correction2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center"
+                    android:textColor="#FCDF03"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/advanced_level_image3"
+                android:layout_width="200dp"
+                android:layout_height="135dp"
+                android:contentDescription="@string/random_car_make"
+                app:srcCompat="@drawable/bmw1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editText_entry3"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="40dp"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:hint="@string/advanced_level_hint_text"
+                    android:importantForAccessibility="no"
+                    android:inputType="textShortMessage|text"
+                    android:textColor="#EAE6E6"
+                    android:textColorHint="#EAE6E6"
+                    android:textSize="18sp"
+                    android:importantForAutofill="no" />
+
+                <TextView
+                    android:id="@+id/advanced_level_correction3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center"
+                    android:textColor="#FCDF03"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button_advanced_level_guess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/show_result"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:onClick="buttonAction"
+        android:text="@string/submit_button_label"
+        android:textSize="22sp"
+        app:rippleColor="#C389DAD1" />
+
+    <TextView
+        android:id="@+id/show_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageTable"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

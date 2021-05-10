@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_second"
+    tools:context=".ThirdActivity">
+
+    <TextView
+        android:id="@+id/display_score2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/score_text_innit"
+        android:textColor="#EAE6E6"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView_hints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_timer2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:fontFamily="@font/alegreya_sans_sc"
+        android:gravity="center"
+        android:text="@string/guess_the_car_make_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F8F6F6"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_timer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="420dp"
+        android:layout_marginRight="420dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="#F8F6F6"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/column1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView_hints"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/random_carmake"
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:contentDescription="@string/random_car_make"
+            app:srcCompat="@drawable/audi1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_hints"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        android:layout_toEndOf="@+id/column1"
+        android:layout_toRightOf="@+id/column1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/display_guess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:textColor="#F8F6F6"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edittext_guess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:enabled="true"
+            android:fontFamily="sans-serif-smallcaps"
+            android:hint="@string/guess_hint"
+            android:importantForAutofill="no"
+            android:inputType="textShortMessage"
+            android:textColor="#F8F6F6"
+            android:textColorHint="#F8F6F6"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/button_submit_guess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:onClick="buttonAction"
+            android:text="@string/submit_button_label"
+            android:textSize="22sp"
+            app:rippleColor="#C389DAD1" />
+
+        <TextView
+            android:id="@+id/textView_display_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

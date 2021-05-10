@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_main"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:fontFamily="@font/alegreya_sans_sc"
+        android:gravity="center"
+        android:text="@string/welcome_label_text"
+        android:textColor="#EAE6E6"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_welcome"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:fontFamily="@font/alegreya_sans_sc"
+        android:gravity="center"
+        android:text="@string/option_label_text"
+        android:textColor="#EAE6E6"
+        android:textSize="26sp" />
+
+    <LinearLayout
+        android:id="@+id/column1"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_option"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:onClick="launchIdentifyCarMake"
+            android:text="@string/identify_the_car_make_label"
+            android:textColor="#EAE6E6"
+            android:textSize="18sp"
+            app:backgroundTint="#72323232" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:onClick="launchIdentifyCarImage"
+            android:text="@string/identify_the_car_image_label"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:backgroundTint="#BFAEAEAE" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_option"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:onClick="launchHints"
+            android:text="@string/hints_label"
+            android:textColor="#000000"
+            android:textSize="19sp"
+            app:backgroundTint="#BFAEAEAE" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:onClick="launchAdvancedLevel"
+            android:text="@string/advanced_level_label"
+            android:textColor="#EAE6E6"
+            android:textSize="18sp"
+            app:backgroundTint="#72323232" />
+
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/button_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="570dp"
+        android:layout_marginLeft="570dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="onTimerButtonClick"
+        android:textOff="@string/timer_off_text"
+        android:textOn="@string/timer_on_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.8" />
+
+</RelativeLayout>

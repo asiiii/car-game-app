@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_second"
+    tools:context=".FourthActivity">
+
+    <TextView
+        android:id="@+id/textView_timer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="420dp"
+        android:layout_marginRight="420dp"
+        android:layout_toStartOf="@+id/display_score3"
+        android:layout_toLeftOf="@+id/display_score3"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="#EAE6E6"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/display_score3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/score_text_innit"
+        android:textColor="#EAE6E6"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView_car_image_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_timer3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:fontFamily="@font/alegreya_sans_sc"
+        android:gravity="center|center_horizontal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#EAE6E6"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/imageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_car_image_question"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp">
+
+        <ImageView
+            android:id="@+id/randomImage1"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:alpha="1.0"
+            android:clickable="true"
+            android:contentDescription="@string/random_car_make"
+            android:focusable="true"
+            android:onClick="onImage1Click"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/audi1" />
+
+        <ImageView
+            android:id="@+id/randomImage2"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:alpha="1.0"
+            android:clickable="true"
+            android:contentDescription="@string/random_car_make"
+            android:focusable="true"
+            android:onClick="onImage2Click"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/bentley1" />
+
+        <ImageView
+            android:id="@+id/randomImage3"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:alpha="1.0"
+            android:clickable="true"
+            android:contentDescription="@string/random_car_make"
+            android:focusable="true"
+            android:onClick="onImage3Click"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/bmw1" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageLayout"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:clickable="true"
+        android:enabled="false"
+        android:focusable="true"
+        android:fontFamily="sans-serif-smallcaps"
+        android:onClick="buttonAction"
+        android:text="@string/next_button_label"
+        android:textColor="#EAE6E6"
+        android:textSize="22sp"
+        app:backgroundTint="#004953"
+        app:rippleColor="#C389DAD1" />
+
+</RelativeLayout>
